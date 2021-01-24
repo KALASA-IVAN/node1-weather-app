@@ -1,11 +1,3 @@
-console.log('server side javascript is loaded!')
-
-// fetch('http://puzzle.mead.io/puzzle').then(response=>
-//     response.json().then(data=>
-//         console.log(data)
-//     )
-// )
-
 fetch('http://localhost:3000/weather?address='+encodeURIComponent(location))
 .then((response)=>{ 
     response.json().then((data)=>{

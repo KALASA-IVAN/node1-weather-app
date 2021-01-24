@@ -1,17 +1,17 @@
 const formData=document.querySelector('form')
 const search=document.querySelector('input')
+
 const message=document.querySelector('#message-1')
-
-message.textContent='Loading...'
-
 const messageTwo=document.querySelector('#message-2')
-
-messageTwo.textContent=''
 
 formData.addEventListener('submit',(e)=>{
     e.preventDefault()
 
     const location=search.value
+
+message.textContent='Loading...'
+messageTwo.textContent=''
+
     fetch('/weather?address='+location)
     .then((response)=>{ 
         response.json().then((data)=>{

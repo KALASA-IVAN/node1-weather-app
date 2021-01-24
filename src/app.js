@@ -22,8 +22,9 @@ app.use(express.static(publicDirectoryPath))
 
 app.get('', (req,res) =>{
     res.render('index',{
-        name:'Kalasa Ivan',
+        weather:'Do you want to know the weather conditions of a place just enter the location and leave the rest to us.',
         country:'Rwanda',
+        name:'Kalasa Ivan',
         head:'Dynamic Web'
     })
 })
@@ -36,7 +37,7 @@ app.get('/about', (req,res)=>{
 })
 app.get('/help',(req,res)=>{
     res.render('help', {
-        message:'All the help',
+        message:'Here to give you all the help you need to work with us!',
         title:'How can we help you?',
         name:'Kalasa Ivan',
         head:'Dynamic Web'

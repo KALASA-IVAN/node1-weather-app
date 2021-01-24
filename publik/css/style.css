@@ -15,9 +15,14 @@ h1{
     text-align: center;
     text-shadow: 0 0 4px #0e0d0d;
 }
-p{
-    background-color: rgb(218, 233, 228);
+p .return{
+    background-color: #ccc;
+    color: blue;
 }
+/* p{
+    background-color: rgb(218, 233, 228);
+} */
+
 a{
     padding-top: 20px;
     text-decoration: none;
